@@ -1,43 +1,21 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="mindo_styles.css">
+  <link rel="stylesheet" href="mindo_styles.css">
 </head>
 
 <body>
-  <div id="lists">
-	<div id="listOne">
-		<div id="myDIV" class="header">
-			<h2>My To Do List</h2>
-			<input type="text" id="myInput" placeholder=""> <span onclick="newElement()" class="addBtn">Add</span>
-		</div>
-		<ul id="myUL">
-			<li>DEFAULT TASK<span class="close">×</span>
-			</li>
-		</ul>
-	</div>
-	<div id="listTwo">
-		<div id="myDIV" class="header">
-			<h2>My To Do List</h2>
-			<input type="text" id="myInput" placeholder=""> <span onclick="newElement()" class="addBtn">Add</span>
-		</div>
-		<ul id="myUL">
-			<li>DEFAULT TASK<span class="close">×</span>
-			</li>
-		</ul>
-	</div>
-	<div id="listThree">
-		<div id="myDIV" class="header">
-			<h2>My To Do List</h2>
-			<input type="text" id="myInput" placeholder=""> <span onclick="newElement()" class="addBtn">Add</span>
-		</div>
-		<ul id="myUL">
-			<li>DEFAULT TASK<span class="close">×</span>
-			</li>
-		</ul>
-	</div>
-</div>
-	<script src="mindo_script.js"></script>
+    <div id="listOne">
+      <div id="myDIV" class="header">
+        <input type="text" id="myInput" placeholder="New Task">
+				<span onclick="newElement()" class="addBtn">+</span>
+      </div>
+      <ul id="myUL">
+        <li>DEFAULT TASK<span class="close">×</span>
+        </li>
+      </ul>
+    </div>
+  <script src="mindo_script.js"></script>
 </body>
 
 </html>
