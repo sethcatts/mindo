@@ -1,2 +1,16 @@
 Local storage solutions:
-	Local storage persists through restarts/refreshes?
+	How to remove/add tasks to local storage.
+
+	arraylist as global variable to update and then push
+	it to the local storage for each user action
+
+	pushGlobalList function
+
+	removelistitem function --> blocker list IDs?
+
+
+
+
+	**Gonna need to dive into js->dom stuff
+
+/**https://css-tricks.com/examples/GradientBorder/**/
