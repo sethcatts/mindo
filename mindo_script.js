@@ -1,12 +1,10 @@
-localStorage.setItem("storedMindoTasks", JSON.stringify(["test0", "test1", "test2", "test3"]));
-
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 for (let i = 0; i < myNodelist.length; i++) {
 	  var span = document.createElement("SPAN");
 	  var txt = document.createTextNode("\u00D7");
 	  span.className = "close";
-  	  span.appendChild(txt);
+  	span.appendChild(txt);
 	  myNodelist[i].appendChild(span);
 }
 
@@ -14,11 +12,12 @@ for (let i = 0; i < myNodelist.length; i++) {
 var close = document.getElementsByClassName("close");
 for (let i = 0; i < close.length; i++) {
   	close[i].onclick = function() {
-	  	console.log("| Item closed");
     	var div = this.parentElement;
     	div.style.display = "none";
+			removeFromLocalStorageArray(div);
   	}
 }
+
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
@@ -40,6 +39,7 @@ function newElement() {
     alert("You must write something!");
   } else {
     document.getElementById("myUL").appendChild(li);
+		addToLocalStorageArray(inputValue);
   }
   document.getElementById("myInput").value = "";
 
@@ -53,6 +53,7 @@ function newElement() {
     close[i].onclick = function() {
       var div = this.parentElement;
       div.style.display = "none";
+			removeFromLocalStorageArray(div);
     }
   }
   console.log("| Adding list item");
