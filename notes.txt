@@ -9,6 +9,12 @@ Local storage solutions:
 	removelistitem function --> blocker list IDs?
 
 
+	FOCUS FOCUS FOCUS
+	FINAL GOALS:
+    - Add 3 list functions + selector for adding
+    - Make the other pages from design document
+
+
 
 
 	**Gonna need to dive into js->dom stuff
