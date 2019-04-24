@@ -1,22 +1,32 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="mindo_styles.css">
+    <link rel="stylesheet" href="mindo_styles.css">
 </head>
 
 <body>
     <div id="listOne">
-      <div id="myDIV" class="header">
-        <input type="text" id="myInput" placeholder="New Task">
-				<span onclick="newElement()" class="addBtn">+</span>
-      </div>
-      <ul id="myUL">
-        <li>DEFAULT TASK<span class="close">×</span>
-        </li>
-      </ul>
+        <div id="myDIV" class="header">
+            <input type="text" id="myInput" placeholder="New Task">
+            <span onclick="newElement()" class="addBtn">+</span>
+            <div id="tester">
+                <input id="list1b" type="radio" name="listSelect" value="list1">List 1
+                <input id="list2b" type="radio" name="listSelect" value="list2">List 2
+                <input id="list3b" type="radio" name="listSelect" value="list3">List 3
+            </div>
+        </div>
+        <ul id="list1">
+            <li>DEFAULT TASK<span class="close">×</span></li>
+        </ul>
+        <ul id="list2">
+            <li>DEFAULT TASK<span class="close">×</span></li>
+        </ul>
+        <ul id="list3">
+            <li>DEFAULT TASK<span class="close">×</span></li>
+        </ul>
     </div>
-  <script src="mindo_script.js"></script>
-  <script src="mindo_localData.js"></script>
+    <script src="mindo_script.js"></script>
+    <script src="mindo_localData.js"></script>
 </body>
 
 </html>

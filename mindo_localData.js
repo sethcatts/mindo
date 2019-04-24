@@ -42,7 +42,7 @@ function appendStoredTasks(array) {
 		var li = document.createElement("li");
 		var t = document.createTextNode(array[i]);
 		li.appendChild(t);
-		document.getElementById("myUL").appendChild(li);
+		document.getElementById("list1").appendChild(li);
 		document.getElementById("myInput").value = "";
 		var span = document.createElement("SPAN");
 		var txt = document.createTextNode("\u00D7");
