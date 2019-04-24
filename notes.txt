@@ -12,8 +12,13 @@ Local storage solutions:
 	FOCUS FOCUS FOCUS
 	FINAL GOALS:
     - Add 3 list functions + selector for adding
+		multidimensional array for task stores?
+
     - Make the other pages from design document
 
+	STRETCH GOALS
+	- Button to hold and show more information
+	  about page functions
 
 
 
