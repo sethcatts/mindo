@@ -34,24 +34,11 @@ function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
-
-    //REFACTOR | Make helper?
-    if(document.getElementById("list1b").checked) {
-        selectedList = "list1";
-    } else if(document.getElementById("list2b").checked) {
-        selectedList = "list2";
-    } else if(document.getElementById("list3b").checked) {
-        selectedList = "list3";
-    } else {
-        alert("Please select a list!");
-    }
-    //--------
-
     li.appendChild(t);
-    if (inputValue === '') {
-        alert("You must write something!");
+    if (inputValue === '' && getSelectedListID() != '') {
+        alert("You must write something and select a list!");
     } else {
-        document.getElementById(selectedList).appendChild(li);
+        document.getElementById(getSelectedListID()).appendChild(li);
         addToLocalStorageArray(inputValue);
     }
     document.getElementById("myInput").value = "";
@@ -70,4 +57,18 @@ function newElement() {
         }
     }
     console.log("| Adding list item");
+}
+
+function getSelectedListID() {
+    var selectedList = "";
+    if(document.getElementById("list1b").checked) {
+        selectedList = "list1";
+    } else if(document.getElementById("list2b").checked) {
+        selectedList = "list2";
+    } else if(document.getElementById("list3b").checked) {
+        selectedList = "list3";
+    } else {
+        alert("Please select a list!");
+    }
+    return selectedList;
 }
