@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Karla', sans-serif;
+}
+
 /* Remove margins and padding from the list */
 ul {
     margin: 0;
@@ -115,6 +119,7 @@ ul li.checked::before {
 
 /* Style the input */
 #myInput {
+    font-family: 'Karla', sans-serif;
     margin: 0;
     width: 75%;
     padding: 10px;
@@ -128,14 +133,18 @@ ul li.checked::before {
 }
 
 #list1, #list2, #list3 {
+    font-family: 'Karla', sans-serif;
     margin-bottom: 50px;
 }
 
 #listRadio {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5em;
     color: grey;
     float: left;
 }
 
 #list1b, #list2b, #list3b {
-    margin-right: 25px;
+    font-size: 1.5em;
+    margin-right: 40px;
 }
