@@ -1,3 +1,4 @@
+//Called on page load in order to get data from storage and add to lists
 load();
 
 //Helper - Get local storage data and pushes to append function
