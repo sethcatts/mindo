@@ -20,16 +20,17 @@ for (let i = 0; i < close.length; i++) {
 
 
 // Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-    if (ev.target.tagName === 'LI') {
-        ev.target.classList.toggle('checked');
-        console.log("| Item marked complete");
-    }
-}, false);
+for(let i = 0; i < 3; i++) {
+    document.getElementById("list"+(i+1)).addEventListener('click', function(ev) {
+        if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('checked');
+            console.log("| Item marked complete");
+        }
+    }, false);
+}
+
 
 // Create a new list item when clicking on the "Add" button
-// TODO: Store tasks when they are created.
 function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
@@ -39,7 +40,7 @@ function newElement() {
         alert("You must write something and select a list!");
     } else {
         document.getElementById(getSelectedListID()).appendChild(li);
-        addToLocalStorageArray(inputValue);
+        addToLocalStorageArray(inputValue, getSelectedListID().substring(4));
     }
     document.getElementById("myInput").value = "";
 
@@ -59,6 +60,9 @@ function newElement() {
     console.log("| Adding list item");
 }
 
+
+//Return the selected list gotten via the radio buttons
+//COMPLETE
 function getSelectedListID() {
     var selectedList = "";
     if(document.getElementById("list1b").checked) {
