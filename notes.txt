@@ -27,3 +27,13 @@ Local storage solutions:
 	**Gonna need to dive into js->dom stuff
 
 /**https://css-tricks.com/examples/GradientBorder/**/
+
+
+<div class="sectionl">
+	<p>Lists</p>
+	<br>
+	<p>You can start creating tasks in Mindo by clicking on the
+	   text area at the top of the page</p>
+	<p>Tasks can be added by clicking on the "+" button to the right
+	   of the text area or by hitting enter on the keyboard</p>
+</div>

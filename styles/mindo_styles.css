@@ -166,6 +166,10 @@ ul li.checked::before {
     margin-bottom: 50px;
 }
 
+#list1 {
+    background-color: black;
+}
+
 #listRadio {
     font-family: 'Karla', sans-serif;
     font-size: 1.5em;
