@@ -19,7 +19,7 @@ ul li {
     position: relative;
     padding: 12px 8px 12px 40px;
     background: #eee;
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.2s;
     list-style: none;
     word-wrap: normal;
@@ -38,6 +38,7 @@ ul li:nth-child(odd) {
 /* Darker background-color on hover */
 ul li:hover {
     background: #ddd;
+    opacity: 0.9;
 }
 
 /* When clicked on, add a background color and strike out text */
@@ -45,6 +46,7 @@ ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
+    opacity: 0.5;
 }
 
 /* Add a "checked" mark when clicked on */
@@ -71,14 +73,14 @@ ul li.checked::before {
 
 .close:hover {
     background-color: darkgrey;
-    color: white;
+    color: #f7f7f6;
 }
 
 /* Style the header */
 .header {
     background-color: white;
     padding: 30px 30px 50px 30px;
-    color: white;
+    color: #f7f7f6;
     text-align: center;
 }
 
@@ -100,7 +102,7 @@ ul li.checked::before {
 .addBtn {
     padding: 10px;
     width: 25%;
-    background: white;
+    background: #f7f7f6;
     color: #bababa;
     float: left;
     text-align: center;
@@ -108,19 +110,19 @@ ul li.checked::before {
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
-    background: white;
     border: 2px solid transparent;
     border-image: -webkit-radial-gradient(right top, 9em 40px, #e2e2e2, white);
     border-image-slice: 1;
 }
 
 .addBtn:hover {
-    background-color: #f7f7f7;
+    background-color: #bebab4;
+    color: white;
 }
 
 .pageHeader {
     text-decoration: none;
-    color: white;
+    color: #f7f7f6;
     background-color: black;
     padding: 5px;
     border-radius: 5px;
@@ -154,7 +156,7 @@ ul li.checked::before {
     padding: 10px;
     float: left;
     font-size: 2em;
-    background: white;
+    background: #f7f7f6;
     color: grey;
     border: 2px solid transparent;
     border-image: -webkit-radial-gradient(bottom left, 9em 40px, #e2e2e2, white);
@@ -166,8 +168,19 @@ ul li.checked::before {
     margin-bottom: 50px;
 }
 
-#list1 {
-    background-color: black;
+#list1 li {
+    background-color: #494949;
+    color: #f7f7f6;
+}
+
+#list2 li {
+    background-color: #636363;
+    color: #f7f7f6;
+}
+
+#list3 li {
+    background-color: #777777;
+    color: #f7f7f6;
 }
 
 #listRadio {
