@@ -22,6 +22,7 @@ ul li {
     font-size: 18px;
     transition: 0.2s;
     list-style: none;
+    word-wrap: normal;
     /* make the list items unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -117,8 +118,32 @@ ul li.checked::before {
     background-color: #f7f7f7;
 }
 
+.pageHeader {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.pageHeader:hover {
+    background-color: #bababa;
+}
+
 #qm {
+    font-size: 1.5em;
+    margin-top: 10px;
+    white-space: nowrap;
     float: right;
+}
+
+#title {
+    font-size: 2.5em;
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
 }
 
 /* Style the input */
