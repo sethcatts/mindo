@@ -23,7 +23,7 @@ Local storage solutions:
 	- Local config file for theme
 
 
-	FINAL FIXES (1.1):
+	FINAL FIXES LIST(v1.1):
 		-1 Checked items dont really work
 		-2 Checked item states dont work
 		-3 Arrows are moving the cursor
