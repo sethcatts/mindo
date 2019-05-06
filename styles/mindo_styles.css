@@ -102,8 +102,8 @@ ul li.checked::before {
 .addBtn {
     padding: 10px;
     width: 25%;
-    background: #f7f7f6;
-    color: #bababa;
+    background: darkgrey;
+    color: white;
     float: left;
     text-align: center;
     font-size: 2em;
