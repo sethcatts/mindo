@@ -23,6 +23,7 @@ h3 {
 }
 
 #helptable {
+  margin-left: -15px;
     border-spacing: 15px;
     margin-right: 40%;
 }
