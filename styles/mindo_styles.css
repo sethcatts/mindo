@@ -152,7 +152,7 @@ ul li.checked::before {
 #myInput {
     font-family: 'Karla', sans-serif;
     margin: 0;
-    width: 75%;
+    width: 68%;
     padding: 10px;
     float: left;
     font-size: 2em;
@@ -185,12 +185,22 @@ ul li.checked::before {
 
 #listRadio {
     font-family: 'Karla', sans-serif;
-    font-size: 1.5em;
     color: black;
     float: left;
+    display: inline-block;
 }
 
+label {
+  font-size: 1em;
+  margin-left: 0px;
+  margin-right: 10px;
+  float: left;
+  opacity: 0.5;
+}
+
+input[type="radio"]:checked+label{ font-weight: bold; opacity: 1; font-size: 1.2em}
+
 #list1b, #list2b, #list3b {
-    font-size: 1.5em;
-    margin-right: 40px;
+  text-align: left;
+  float: left;
 }

@@ -28,7 +28,7 @@ Local storage solutions:
 		//-2 Checked item states dont work
 		-3 Arrows are moving the cursor
 		//-4 Plus sign is hard to see
-		-5 Text opacity[?]
+		//-5 Text opacity[?]
 
 
 

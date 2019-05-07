@@ -1,39 +1,42 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="Mindo" content="Mindo">
-    <link rel="stylesheet" href="styles/mindo_styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <title>Mindo</title>
+  <meta charset="utf-8">
+  <meta name="Mindo" content="Mindo">
+  <link rel="stylesheet" href="styles/mindo_styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <title>Mindo</title>
 </head>
 
 <body>
-    <div id="listOne">
-        <h1 id="title">Mindo</h1>
-        <span id="qm">
-            <a href="mindo_help.html" class="pageHeader">Help</a>
-            <a href="mindo_credits.html" class="pageHeader">Credits</a>
-        </span>
-        <div id="myDIV" class="header">
-            <input type="text" id="myInput" placeholder="Type a task, pick a list, and hit enter">
-            <span onclick="newElement()" class="addBtn">+</span>
-            <div id="listRadio">
-                List 1<input id="list1b" type="radio" name="listSelect" value="list1" checked="checked">
-                List 2<input id="list2b" type="radio" name="listSelect" value="list2">
-                List 3<input id="list3b" type="radio" name="listSelect" value="list3">
-            </div>
-        </div>
-        <ul id="list1">
-        </ul>
-        <ul id="list2">
-        </ul>
-        <ul id="list3">
-        </ul>
+  <div id="listOne">
+    <h1 id="title">Mindo</h1>
+    <span id="qm">
+      <a href="mindo_help.html" class="pageHeader">Help</a>
+      <a href="mindo_credits.html" class="pageHeader">Credits</a>
+    </span>
+    <div id="myDIV" class="header">
+      <div id="listRadio">
+        <input id="list1b" type="radio" name="listSelect" value="list1" checked="checked"><label>List 1</label>
+        <br>
+        <input id="list2b" type="radio" name="listSelect" value="list2"><label>List 2</label>
+        <br>
+        <input id="list3b" type="radio" name="listSelect" value="list3"><label>List 3</label>
+      </div>
+      <input type="text" id="myInput" placeholder="Type a task, pick a list, and hit enter">
+      <span onclick="newElement()" class="addBtn">+</span>
     </div>
-    <script src="scripts/mindo_script.js"></script>
-    <script src="scripts/mindo_localData.js"></script>
-    <script src="scripts/mindo_keys.js"></script>
+    <ul id="list1">
+    </ul>
+    <ul id="list2">
+    </ul>
+    <ul id="list3">
+    </ul>
+  </div>
+  <script src="scripts/mindo_script.js"></script>
+  <script src="scripts/mindo_localData.js"></script>
+  <script src="scripts/mindo_keys.js"></script>
 </body>
 
 </html>
