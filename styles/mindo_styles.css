@@ -165,7 +165,7 @@ ul li.checked::before {
 
 #list1, #list2, #list3 {
     font-family: 'Karla', sans-serif;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 #list1 li {
@@ -192,8 +192,8 @@ ul li.checked::before {
 
 label {
   font-size: 1em;
-  margin-left: 0px;
-  margin-right: 10px;
+  margin-right: 20px;
+  padding-right: 10px;
   float: left;
   opacity: 0.5;
 }
@@ -203,4 +203,5 @@ input[type="radio"]:checked+label{ font-weight: bold; opacity: 1; font-size: 1.2
 #list1b, #list2b, #list3b {
   text-align: left;
   float: left;
+  visibility: hidden;
 }
