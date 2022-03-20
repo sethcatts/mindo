@@ -65,6 +65,16 @@ ul li.checked::before {
     width: 7px;
 }
 
+label {
+    font-size: 1em;
+    margin-right: 20px;
+    padding-right: 10px;
+    float: left;
+    opacity: 0.5;
+}
+  
+input[type="radio"]:checked+label{ font-weight: bold; opacity: 1; font-size: 1.2em}
+  
 /* Style the close button */
 .close {
     position: absolute;
@@ -76,14 +86,6 @@ ul li.checked::before {
 .close:hover {
     background-color: darkgrey;
     color: #f7f7f6;
-}
-
-/* Style the header */
-.header {
-    background-color: white;
-    padding: 20px 0px 20px 0px;
-    color: #f7f7f6;
-    text-align: center;
 }
 
 /* Clear floats after the header */
@@ -112,37 +114,50 @@ ul li.checked::before {
     background-color: #bababa;
 }
 
-#qm {
+#helpLinks {
     font-size: 1.5em;
     margin-top: 10px;
-    white-space: nowrap;
     float: right;
+    display: inline;
 }
 
 #title {
     font-size: 2.5em;
-    display: inline;
     margin-right: 15px;
     margin-top: 10px;
+    display: inline;
 }
 
 /* Style the input */
 #myInput {
     font-family: 'Karla', sans-serif;
     margin: 0;
-    width: 100%;
+    width: auto;
     padding: 10px;
-    float: left;
     font-size: 2em;
     background: #f7f7f6;
     color: grey;
     border: 2px solid transparent;
     border-image: -webkit-radial-gradient(bottom left, 9em 40px, #e2e2e2, white);
     border-image-slice: 1;
+    display: inline;
 }
 
 #myInput:hover {
     cursor: crosshair;
+}
+
+/* Style the header */
+#inputDiv {
+    background-color: white;
+    color: #f7f7f6;
+    text-align: center;
+}
+
+#listRadio {
+    font-family: 'Karla', sans-serif;
+    color: black;
+    display: inline;
 }
 
 #list1, #list2, #list3 {
@@ -165,25 +180,7 @@ ul li.checked::before {
     color: #f7f7f6;
 }
 
-#listRadio {
-    font-family: 'Karla', sans-serif;
-    color: black;
-    float: left;
-    display: inline-block;
-}
-
-label {
-  font-size: 1em;
-  margin-right: 20px;
-  padding-right: 10px;
-  float: left;
-  opacity: 0.5;
-}
-
-input[type="radio"]:checked+label{ font-weight: bold; opacity: 1; font-size: 1.2em}
-
 #list1b, #list2b, #list3b {
   text-align: left;
-  float: left;
   visibility: hidden;
 }
