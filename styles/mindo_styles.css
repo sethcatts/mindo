@@ -4,18 +4,16 @@
 }
 
 body {
-    margin-left: 15px;
-    margin-top: 15px;
     font-family: 'Karla', sans-serif;
 }
 
 
 label {
-    font-size: 1.2em;
+    font-size: 1em;
     opacity: 0.5;
 }
   
-input[type="radio"]:checked+label{ font-weight: bold; opacity: 1; font-size: 1.2em}
+input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
   
 /* Style the close button */
 .close {
@@ -73,35 +71,40 @@ input[type="radio"]:checked+label{ font-weight: bold; opacity: 1; font-size: 1.2
 /* Style the input */
 #myInput {
     font-family: 'Karla', sans-serif;
-    width: auto;
-    font-size: 2em;
+    font-size: 3em;
     background: #f7f7f6;
     color: grey;
     border: 2px solid transparent;
     border-image: -webkit-radial-gradient(bottom left, 9em 40px, #e2e2e2, white);
     border-image-slice: 1;
     display: inline;
+    vertical-align: middle;
+}
+
+#listRadio {
+    font-family: 'Karla', sans-serif;
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+
 }
 
 #myInput:hover {
     cursor: crosshair;
 }
 
-/* Style the header */
 #inputDiv {
     background-color: white;
     color: #f7f7f6;
+    margin: 0px;
+    padding: 0px;
 }
 
-#listRadio {
-    font-family: 'Karla', sans-serif;
-    color: black;
-    display: inline;
-}
+
 
 #list1, #list2, #list3 {
     font-family: 'Karla', sans-serif;
-    margin-bottom: 10px;
 }
 
 #list1 li {
