@@ -93,7 +93,7 @@ input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
     color: black;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 30px;
 
 }
 
@@ -104,7 +104,7 @@ input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
 #inputDiv {
     background-color: white;
     color: #f7f7f6;
-    margin: 0px;
+    margin: 10px;
     padding: 0px;
 }
 
@@ -131,7 +131,7 @@ input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
 }
 
 #list1b, #list2b, #list3b {
-  text-align: left;
+  text-align: top;
   visibility: hidden;
 }
 
