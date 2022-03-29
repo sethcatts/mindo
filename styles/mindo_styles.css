@@ -70,8 +70,10 @@ input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
 
 /* Style the input */
 #myInput {
+    width: 90%;
+    padding: 10px;
     font-family: 'Karla', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     background: #f7f7f6;
     color: grey;
     border: 2px solid transparent;
@@ -79,6 +81,11 @@ input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
     border-image-slice: 1;
     display: inline;
     vertical-align: middle;
+}
+
+#myInput input {
+    width: 90%;
+    height: 100%;
 }
 
 #listRadio {
@@ -104,6 +111,7 @@ input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
 
 
 #list1, #list2, #list3 {
+    display: inline-block;
     font-family: 'Karla', sans-serif;
 }
 
