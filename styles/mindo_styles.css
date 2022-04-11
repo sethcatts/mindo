@@ -98,7 +98,7 @@ input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
 }
 
 #myInput:hover {
-    
+
 }
 
 #inputDiv {
@@ -113,6 +113,7 @@ input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
 #list1, #list2, #list3 {
     display: inline-block;
     font-family: 'Karla', sans-serif;
+    width: 33%;
 }
 
 #list1 li {
