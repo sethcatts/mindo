@@ -144,7 +144,6 @@ ul {
 
 /* Style the list items */
 ul li {
-    position: relative;
     padding: 12px 8px 12px 40px;
     background: #eee;
     font-size: 16px;
