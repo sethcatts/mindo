@@ -41,8 +41,8 @@ function newElement() {
         //alert("You must write something and select a list!");
         var input = document.getElementById("myInput");
         input.style.backgroundColor = "black";
-        await new Promise(r => setTimeout(r, 2000));
-        input.style.backgroundColor = "white";
+        //await new Promise(r => setTimeout(r, 2000));
+        //input.style.backgroundColor = "white";
     } else {
         document.getElementById(getSelectedListID()).appendChild(li);
         addToLocalStorageArray(inputValue, getSelectedListID().substring(8));
