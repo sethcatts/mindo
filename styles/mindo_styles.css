@@ -83,7 +83,7 @@ input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
 }
 
 #myInput input {
-    width: 90%;
+    width: auto;
     height: 100%;
 }
 
@@ -96,41 +96,37 @@ input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
 
 }
 
-#myInput:hover {
-
-}
-
 #inputDiv {
+    width: auto;
     background-color: white;
     color: #f7f7f6;
     margin: 10px;
     padding: 0px;
 }
 
-
-
-#list1, #list2, #list3 {
+.taskList{
     display: inline-block;
+    vertical-align: top;
     font-family: 'Karla', sans-serif;
     width: 33%;
 }
 
-#list1 li {
+#taskList1 li {
     background-color: #494949;
     color: #f7f7f6;
 }
 
-#list2 li {
+#taskList2 li {
     background-color: #636363;
     color: #f7f7f6;
 }
 
-#list3 li {
+#taskList3 li {
     background-color: #777777;
     color: #f7f7f6;
 }
 
-#list1b, #list2b, #list3b {
+.listSelector {
   text-align: top;
   visibility: hidden;
 }
