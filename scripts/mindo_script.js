@@ -37,10 +37,15 @@ function newElement() {
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
     if (inputValue === '' && getSelectedListID() != '') {
-        alert("You must write something and select a list!");
+        //TODO: Change this to highlight the input field for a second
+        //alert("You must write something and select a list!");
+        var input = document.getElementById("myInput");
+        input.style.backgroundColor = "black";
+        await new Promise(r => setTimeout(r, 2000));
+        input.style.backgroundColor = "white";
     } else {
         document.getElementById(getSelectedListID()).appendChild(li);
-        addToLocalStorageArray(inputValue, getSelectedListID().substring(4));
+        addToLocalStorageArray(inputValue, getSelectedListID().substring(8));
     }
     document.getElementById("myInput").value = "";
 
