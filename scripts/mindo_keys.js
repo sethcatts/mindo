@@ -17,19 +17,19 @@ input.addEventListener("keyup", function(event) {
 function rotateSelectedList(key) {
     var l = getSelectedListID();
     var r = key == 40;
-    if(l === "list1") {
+    if(l === "taskList1") {
         if(r) {
             document.getElementById("list2b").checked = true;
         } else {
             document.getElementById("list3b").checked = true;
         }
-    } else if(l === "list2") {
+    } else if(l === "taskList2") {
         if(r) {
             document.getElementById("list3b").checked = true;
         } else {
             document.getElementById("list1b").checked = true;
         }
-    } else if(l === "list3") {
+    } else if(l === "taskList3") {
         if(r) {
             document.getElementById("list1b").checked = true;
         } else {
