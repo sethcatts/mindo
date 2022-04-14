@@ -20,21 +20,21 @@
   </span>
   <div id="inputDiv">
     <div id="listRadio">
-      <input id="list1b" type="radio" name="listSelect" value="list1" checked="checked"><label>List 1</label>
+      <input class="listSelector" type="radio" name="listSelect" value="list1" checked="checked"><label>List 1</label>
       <br>
-      <input id="list2b" type="radio" name="listSelect" value="list2"><label>List 2</label>
+      <input class="listSelector" type="radio" name="listSelect" value="list2"><label>List 2</label>
       <br>
-      <input id="list3b" type="radio" name="listSelect" value="list3"><label>List 3</label>
+      <input class="listSelector" type="radio" name="listSelect" value="list3"><label>List 3</label>
     </div>
     <!-- <input [size]="myInput.value.length" type="text" id="myInput" placeholder="Type a task, pick a list, and hit enter" onclick="newElement()"> -->
     <input [size]="myInput.value.length" type="text" id="myInput" placeholder="Type a task, pick a list, and hit enter">
   </div>
   <div id="listDisplay">
-    <ul id="list1">
+    <ul class="taskList" id="taskList1">
     </ul>
-    <ul id="list2">
+    <ul class="taskList" id="taskList2">
     </ul>
-    <ul id="list3">
+    <ul class="taskList" id="taskList3">
     </ul>
   </div>
   <script src="scripts/mindo_script.js"></script>

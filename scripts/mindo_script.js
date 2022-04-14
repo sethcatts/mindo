@@ -66,11 +66,11 @@ function newElement() {
 function getSelectedListID() {
     var selectedList = "";
     if(document.getElementById("list1b").checked) {
-        selectedList = "list1";
+        selectedList = "taskList1";
     } else if(document.getElementById("list2b").checked) {
-        selectedList = "list2";
+        selectedList = "taskList2";
     } else if(document.getElementById("list3b").checked) {
-        selectedList = "list3";
+        selectedList = "taskList3";
     } else {
         alert("Please select a list!");
     }
