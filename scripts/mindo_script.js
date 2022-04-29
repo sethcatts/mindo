@@ -37,12 +37,7 @@ function newElement() {
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
     if (inputValue === '' && getSelectedListID() != '') {
-        //TODO: Change this to highlight the input field for a second
-        //alert("You must write something and select a list!");
-        var input = document.getElementById("myInput");
-        input.style.backgroundColor = "black";
-        //await new Promise(r => setTimeout(r, 2000));
-        //input.style.backgroundColor = "white";
+        alert("You must write something and select a list!");
     } else {
         document.getElementById(getSelectedListID()).appendChild(li);
         addToLocalStorageArray(inputValue, getSelectedListID().substring(8));
