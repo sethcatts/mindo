@@ -1,42 +1,64 @@
 body {
   margin-top: 15px;
 }
-h1 {
+
+#help-title {
     font-size: 3em;
     margin-right: 50%;
+    margin-bottom: 0px;
 }
 
-h3 {
-    font-size: 2em;
+#name {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+#helptable {
+    margin-left: -15px;
+    border-spacing: 15px;
+    margin-right: 40%;
+}
+
+#credits-paragraph {
+    font-size: 2.5em;
+    margin-right: 60%;
+}
+
+.help-paragraph {
+    font-size: 1em;
+}
+
+.help-header {
+    margin-bottom: 0px;
+    text-decoration: underline;
 }
 
 .section {
     width: 600px;
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 1.2em;
     padding: 25px;
-    padding-top: 5px;
+    padding-top: 0px;
     padding-bottom: 35px;
     background-color: black;
     color: white;
     border-radius: 5px;
 }
 
-#helptable {
-  margin-left: -15px;
-    border-spacing: 15px;
-    margin-right: 40%;
-}
 .subpageLink {
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
     background-color: black;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
-    margin-right: 15px;
 }
 
 .subpageLink:hover {
     background-color: #bababa;
+    color:black;
 }
