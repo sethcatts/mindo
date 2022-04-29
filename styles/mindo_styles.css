@@ -50,17 +50,18 @@ input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
 }
 
 #helpLinks {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-top: 10px;
     float: right;
     display: inline;
 }
 
 #title {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-right: 15px;
     margin-top: 10px;
     display: inline;
+    font-weight: bolder;
 }
 
 #myInput {
