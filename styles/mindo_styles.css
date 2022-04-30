@@ -13,17 +13,6 @@ label {
 }
   
 input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
-  
-.close {
-    background-color: transparent;
-    float: right;
-    margin: 0px;
-}
-
-.close:hover {
-    background-color: darkgrey;
-    color: #f7f7f6;
-}
 
 .header:after {
     content: "";
@@ -128,13 +117,27 @@ input[type="radio"]:checked+label{opacity: 1; font-size: 1em}
   visibility: hidden;
 }
 
+.close {
+    background-color: transparent;
+    float: right;
+    margin: 0px;
+    margin-top: -12px;
+    margin-right: -8px;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: darkgrey;
+    color: #f7f7f6;
+}
+
 ul {
     margin: 0;
     padding: 0;
 }
 
 ul li {
-    padding: 12px 8px 12px 40px;
+    padding: 12px 8px 12px 15px;
     background: #eee;
     font-size: 16px;
     transition: 0.2s;
