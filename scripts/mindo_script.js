@@ -19,17 +19,6 @@ for (let i = 0; i < close.length; i++) {
 }
 
 
-// Add a "checked" symbol when clicking on a list item
-for(let i = 0; i < 3; i++) {
-    document.getElementById("list"+(i+1)).addEventListener('click', function(ev) {
-        if (ev.target.tagName === 'LI') {
-            ev.target.classList.toggle('checked');
-            console.log("| Item marked complete");
-        }
-    }, false);
-}
-
-
 // Create a new list item when clicking on the "Add" button
 function newElement() {
     var li = document.createElement("li");

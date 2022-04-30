@@ -11,6 +11,7 @@ function load() {
 //TODO: refactor
 function returnLocalStorageArray() {
     const storedTasks = JSON.parse(localStorage.getItem("storedMindoTasks"));
+    console.log(storedTasks);
     if (storedTasks != null) {
         return storedTasks;
     } else {
@@ -28,7 +29,7 @@ function returnLocalStorageArray() {
 function removeFromLocalStorageArray(div) {
     var taskName = div.textContent.substring(0, div.textContent.length - 1);
     var localTasks = returnLocalStorageArray();
-    var listNum = div.parentElement.id.substring(4);
+    var listNum = div.parentElement.id.substring(8);
     localTasks[listNum - 1].splice(localTasks.indexOf(taskName), 1);
     localStorage.setItem("storedMindoTasks", JSON.stringify(localTasks));
 }
@@ -48,7 +49,7 @@ function appendStoredTasks(array) {
             var li = document.createElement("li");
             var t = document.createTextNode(array[x][i]);
             li.appendChild(t);
-            document.getElementById("list"+(x+1)).appendChild(li);
+            document.getElementById("taskList"+(x+1)).appendChild(li);
             document.getElementById("myInput").value = "";
             var span = document.createElement("SPAN");
             var txt = document.createTextNode("\u00D7");
