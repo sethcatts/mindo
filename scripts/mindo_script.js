@@ -8,7 +8,7 @@ for (let i = 0; i < myNodelist.length; i++) {
     myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
+//Hide the task and remove it from local data storage
 var close = document.getElementsByClassName("close");
 for (let i = 0; i < close.length; i++) {
     close[i].onclick = function() {
@@ -19,7 +19,7 @@ for (let i = 0; i < close.length; i++) {
 }
 
 
-// Create a new list item when clicking on the "Add" button
+//Add a task to the page and the local data storage
 function newElement() {
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
@@ -46,12 +46,10 @@ function newElement() {
             removeFromLocalStorageArray(div);
         }
     }
-    console.log("| Adding list item");
 }
 
 
-//Return the selected list gotten via the radio buttons
-//COMPLETE
+//Get the ID of the currently selected list
 function getSelectedListID() {
     var selectedList = "";
     if(document.getElementById("list1b").checked) {

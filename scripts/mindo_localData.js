@@ -8,7 +8,6 @@ function load() {
 }
 
 //Return the current value of the local storage array
-//TODO: refactor
 function returnLocalStorageArray() {
     const storedTasks = JSON.parse(localStorage.getItem("storedMindoTasks"));
     console.log(storedTasks);
@@ -25,7 +24,6 @@ function returnLocalStorageArray() {
     }
 }
 
-//Weird edge case with DEFAULT CASE, ignoring for now
 function removeFromLocalStorageArray(div) {
     var taskName = div.textContent.substring(0, div.textContent.length - 1);
     var localTasks = returnLocalStorageArray();
@@ -42,7 +40,6 @@ function addToLocalStorageArray(task, list) {
 }
 
 // Runs once on page load to add the tasks from storage to the task list
-// TODO: Refactor
 function appendStoredTasks(array) {
     for (var x = 0; x < 3; x++) {
         for (let i = 0; i < array[x].length; i++) {
