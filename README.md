@@ -1,11 +1,11 @@
 # Mindo
 ### Overview
-Mindo started out as a class project that I have continued to work on after submission. The goal of the project was creating a very simple and incredibly minimal todo list web page. I wanted a very quick way to get a little list of tasks going.
+Mindo started out as a class project that I continued to work on after submission. The goal of the project was creating a very simple and incredibly minimal todo list web page. I wanted a very quick way to get a little list of tasks going that includeds some organization using only the keyboard.
 
-Mindo can be found on my website: [devcatts.me/mindo.html](http://devcatts.me/mindo.html)
+A live instance of Mindo can be found here: https://sethcatts.github.io/mindo/main.html
 
 ### Tech Stack
-Because it was a learning project, Mindo has a vanilla stack of HTML, CSS, and JavaScript. 
+Due to its very minimal codebase and functionality Mindo has a tech stack of HTML, CSS, and vanilla JavaScript. 
 
 ## Screenshots
 #### Main Page
